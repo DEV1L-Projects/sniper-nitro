@@ -171,6 +171,13 @@ bot.on("message", message => {
         console.log(e)
     }
 });
+
+client.on("message", message => {
+  if (message.content === "ping") {
+    message.channel.send("Pong!");
+  }
+});
+
 bot.login(token).catch(function (error) {
     console.log(error.message);
 });
