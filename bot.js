@@ -2,9 +2,6 @@ const Discord = require("discord.js");
 const axios = require('axios').default;
 
 const client = new Discord.Client();
-const {
-    account_token
-} = require("./config.json");
 
 client.on("message", msg => {
   if (msg.content === "ping") {
