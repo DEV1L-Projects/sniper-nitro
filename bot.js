@@ -3,12 +3,6 @@ const axios = require('axios').default;
 
 const client = new Discord.Client();
 
-client.on("message", msg => {
-  if (msg.content === "ping") {
-    msg.reply("Pong!");
-  }
-});
-
 client.on('ready', () => {
     console.log(`Looking for discord gifts...`);
 });
