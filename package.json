@@ -2,7 +2,7 @@
   "name": "discordnitrosniper",
   "version": "1.0.0",
   "description": "Autom claims Nitro's",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
