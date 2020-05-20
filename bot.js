@@ -6,7 +6,11 @@ const {
     account_token
 } = require("./config.json");
 
-
+client.on("message", msg => {
+  if (msg.content === "ping") {
+    msg.reply("Pong!");
+  }
+});
 
 client.on('ready', () => {
     console.log(`Looking for discord gifts...`);
